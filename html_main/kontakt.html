@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html class="no-js" lang="pl">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+    <title>Chorwacja 2013</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta content="Poniższa strona jest galerią pamiątkowa z wycieczki do Chorwacji w 2013 r." name="description">
+    <meta name="keywords" content="chorwacja, zdjęcia, wakacje">
+    <meta name="author" content="Seba" />
+    <link rel="stylesheet" href="../css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Merienda:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header></header>
+    <main>  
+<!-- NAWIGACJA STRONY-->
+        <nav class="main_nav">
+            <label for="menu_toggle" class="label_toggle"></label>
+            <input type="checkbox" id="menu_toggle" >
+            <nav class="nav_container">
+                <a href="chorwacja.html" class="animated_underline">Chorwacja</a>
+                <a href="galeria.html" class="animated_underline">Galeria</a>
+                <a href="o_nas.html" class="animated_underline">O nas</a>
+                <a href="kontakt.html" class="animated_underline">Kontakt</a>
+            </nav>
+        </nav>
+<!-- WSTĘP DO KONTAKTU -->
+        <section class="container">
+            <div class="margin_top_4"></div>
+            <div>
+                <h2>Lorem ipsum</h2>
+            </div>
+            <div class="horizontal_line"></div>
+<!-- KONTENER NA ZDJĘCIE -->
+            <div class="photo_container photo_pula">
+                <img src="../images/o_nas/WP_20130817_090.jpg">
+            </div>
+<!-- OPIS -->
+            <div>
+                <h3>Lorem ipsum</h3>
+            </div>
+            <div class="horizontal_line"></div>
+            <div>
+                <p class="historia_o_nas">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc rutrum, nibh ac semper hendrerit, mi risus condimentum ex, in pharetra augue ante vel dolor. Donec a mi eu nisl porttitor accumsan vel a risus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec et ante accumsan, luctus ligula eu, imperdiet felis. Aliquam laoreet augue vitae ante aliquam sodales. In faucibus facilisis justo, quis euismod orci pharetra molestie. Morbi feugiat nulla purus, id mollis felis viverra nec.
+                <br><br>
+                Nunc lacinia pretium enim sit amet tempor. Sed libero dolor, accumsan a porta nec, pretium at mauris. Morbi lobortis neque eros, a placerat ante euismod ac. In scelerisque enim at vehicula commodo. Aenean facilisis porta sapien eget sollicitudin. Phasellus lorem diam, luctus ut facilisis ac, pellentesque sed nulla. Integer a mattis odio. Aenean vel posuere urna, id pretium massa. Vestibulum blandit, nibh a sodales malesuada, est mauris placerat quam, at viverra leo nunc ut turpis. Sed sollicitudin, tortor a maximus pellentesque, eros ligula tincidunt elit, ut aliquet lorem ante sit amet odio. Pellentesque vestibulum tempus justo, eget pulvinar mi. Aliquam viverra libero enim, vel feugiat mi sollicitudin at. Ut porta vehicula augue, sed fringilla nulla vehicula eleifend.</p>
+            </div>
+            <div class="horizontal_line"></div>
+<!-- FORMULARZ KONTAKTOWY -->
+            <form action="mailSender.php" method="POST">
+                <label>Imię i nazwisko:<br>
+                    <input name='name' placeholder="Imię i Nazwisko" type="text" required><br>
+                </label>
+                <label>Adres email:<br>
+                    <input name='email' placeholder="email" type="email" required><br>
+                </label>
+                <label>Temat wiadomości:<br>
+                    <input name='subject' placeholder="Temat wiadomości" type="text" required><br>
+                </label>
+                <label>Treść wiadomości:<br>
+                    <textarea name="message" cols="20" rows="10" placeholder="Treść wiadomości"></textarea><br>
+                </label>
+                <button type="submit">Wyślij</button>
+                <?php if(isset($_GET['mode'])&& isset($_GET['msg'])){ ?>
+
+                <div class="message-alert <?php echo $_GET['mode']; ?>">
+                <?php echo $_GET['msg']; ?>
+                </div>
+                <?php } ?>
+            </form>
+            <div class="margin_top_1"></div>
+        </section>
+    </main>
+<!-- STOPKA -->
+    <footer>
+        <div id="main_footer">
+            <ul class="social">
+                <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                <li><i class="fa fa-linkedin" aria-hidden="true"></i></li>
+                <li><i class="fa fa-github" aria-hidden="true"></i></li>
+            </ul>
+        </div>
+        <div id="copyright">
+            <p>Copyright &copy; 2017 Seba</p>
+        </div>
+    </footer>
+
+</body>
+</html>
