@@ -107,27 +107,3 @@ TRANSITIONS & ANIMATIONS
     color: white;
     text-shadow: none;
 }
-
-/* ============================================================
-MEDIA QUERIES
-============================================================ */
-/*
-@media all and (min-width: 768px) {
-  .content_header h2 {
-    font-size: 42px;
-  }
-  .content_header p,
-  .content_header a {
-    font-size: 18px;
-  }
-}
-@media all and (min-width: 1024px) {
-  .content_header h2 {
-    font-size: 54px;
-  }
-  .content_header p,
-  .content_header a {
-    font-size: 24px;
-  }
-}
-*/
