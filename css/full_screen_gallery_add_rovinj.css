@@ -1,7 +1,11 @@
+/* ============================================================
+STRUCTURE OF THE FULL SCREEN GALLERY SLIDER
+============================================================ */
 footer {
     position: fixed;
     bottom: 0;
 }
+
 .cb-slideshow,
 .cb-slideshow:after {
     position: fixed;
@@ -35,8 +39,11 @@ footer {
     animation: imageAnimation 60s linear infinite 0s;
 }
 
-
+/* ============================================================
+IMAGES FOR THE ANIMATION
+============================================================ */
 .cb-slideshow li:nth-child(1) span { background-image: url(../images/gallery_4/WP_20130814_036.jpg); }
+
 .cb-slideshow li:nth-child(2) span {
     background-image: url(../images/gallery_4/WP_20130814_045.jpg);
     -webkit-animation-delay: 6s;
@@ -45,6 +52,7 @@ footer {
     -ms-animation-delay: 6s;
     animation-delay: 6s;
 }
+
 .cb-slideshow li:nth-child(3) span {
     background-image: url(../images/gallery_4/WP_20130814_048.jpg);
     -webkit-animation-delay: 12s;
@@ -52,18 +60,17 @@ footer {
     -o-animation-delay: 12s;
     -ms-animation-delay: 12s;
     animation-delay: 12s;
-
 }
+
 .cb-slideshow li:nth-child(4) span {
     background-image: url(../images/gallery_4/WP_20130814_053.jpg);
     -webkit-animation-delay: 18s;
     -moz-animation-delay: 18s;
     -o-animation-delay: 18s;
     -ms-animation-delay: 18s;
-    animation-delay: 18s;
-      
-
+    animation-delay: 18s;   
 }
+
 .cb-slideshow li:nth-child(5) span {
     background-image: url(../images/gallery_4/WP_20130814_081.jpg);
     -webkit-animation-delay: 24s;
@@ -71,9 +78,8 @@ footer {
     -o-animation-delay: 24s;
     -ms-animation-delay: 24s;
     animation-delay: 24s;
-      
-
 }
+
 .cb-slideshow li:nth-child(6) span {
     background-image: url(../images/gallery_4/WP_20130814_128.jpg);
     -webkit-animation-delay: 30s;
@@ -81,9 +87,8 @@ footer {
     -o-animation-delay: 30s;
     -ms-animation-delay: 30s;
     animation-delay: 30s;
-
-
 }
+
 .cb-slideshow li:nth-child(7) span {
     background-image: url(../images/gallery_4/WP_20130814_144.jpg);
     -webkit-animation-delay: 36s;
@@ -91,8 +96,8 @@ footer {
     -o-animation-delay: 36s;
     -ms-animation-delay: 36s;
     animation-delay: 36s;
-
 }
+
 .cb-slideshow li:nth-child(8) span {
     background-image: url(../images/gallery_4/WP_20130814_160.jpg);
     -webkit-animation-delay: 42s;
@@ -100,8 +105,8 @@ footer {
     -o-animation-delay: 42s;
     -ms-animation-delay: 42s;
     animation-delay: 42s;
-
 }
+
 .cb-slideshow li:nth-child(9) span {
     background-image: url(../images/gallery_4/WP_20130814_164.jpg);
     -webkit-animation-delay: 48s;
@@ -109,9 +114,8 @@ footer {
     -o-animation-delay: 48s;
     -ms-animation-delay: 48s;
     animation-delay: 48s;
-      
-
 }
+
 .cb-slideshow li:nth-child(10) span {
     background-image: url(../images/gallery_4/WP_20130814_172.jpg);
     -webkit-animation-delay: 54s;
@@ -119,11 +123,11 @@ footer {
     -o-animation-delay: 54s;
     -ms-animation-delay: 54s;
     animation-delay: 54s;
-
-
 }
 
-/* Animation for the slideshow images */
+/* ============================================================
+ANIMATION FOR THE SLIDESHOW IMAGES
+============================================================ */
 @-webkit-keyframes imageAnimation { 
 	0% {
 	    opacity: 0;
@@ -144,6 +148,7 @@ footer {
 	}
 	100% { opacity: 0 }
 }
+
 @-moz-keyframes imageAnimation { 
 	0% {
 	    opacity: 0;
@@ -164,6 +169,7 @@ footer {
 	}
 	100% { opacity: 0 }
 }
+
 @-o-keyframes imageAnimation { 
 	0% {
 	    opacity: 0;
@@ -184,6 +190,7 @@ footer {
 	}
 	100% { opacity: 0 }
 }
+
 @-ms-keyframes imageAnimation { 
 	0% {
 	    opacity: 0;
@@ -206,8 +213,6 @@ footer {
 }
 
 @keyframes imageAnimation { 
-    animation-duration: 6s;
-
 	0% {
        
 	    opacity: 0;
@@ -233,3 +238,7 @@ footer {
         
         opacity: 0 }
 }
+
+/* ============================================================
+THE END
+============================================================ */
