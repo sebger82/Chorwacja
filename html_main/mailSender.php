@@ -46,5 +46,5 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
         $mode = 'error';
     }
     //przenosi nas na wlasciwa strone
-    header( 'Location: kontakt.php?msg=' . $msg . '&mode=' . $mode);  
+    header( 'Location: contact.php?msg=' . $msg . '&mode=' . $mode);  
 }
