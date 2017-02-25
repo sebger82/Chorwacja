@@ -457,8 +457,9 @@ CONTENT, TEXT - "ABOUT.HTML"
 .photo_container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
 }
+
 .photo_block_left, .photo_block_right {
     width: 50%;
     height: 360px;
@@ -685,8 +686,8 @@ TRANSITIONS & ANIMATIONS FOR FOOTER
 CONTENT, TEXT, IMAGES - "CONTACT.HTML"
 ============================================================ */
 .photo_pula img {
+    object-fit: contain;
     width: 100%;
-    height: 100%;
     padding: 1rem;
 }
 
